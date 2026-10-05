@@ -1,0 +1,22 @@
+{
+  "name": "gaishi",
+  "version": "0.1.0",
+  "description": "Work in English, report in Japanese — an agent skill for Japanese engineers in global tech.",
+  "author": { "name": "takumi-shida", "url": "https://github.com/takumi-shida" },
+  "homepage": "https://github.com/takumi-shida/Gaishi",
+  "repository": "https://github.com/takumi-shida/Gaishi",
+  "license": "MIT",
+  "keywords": ["skills", "japanese", "english", "language-policy"],
+  "skills": "./skills/",
+  "hooks": {},
+  "interface": {
+    "displayName": "gaishi",
+    "shortDescription": "Work in English, report in Japanese",
+    "longDescription": "gaishi makes the agent research, analyze, code, and operate tools in English, then deliver the final report to the user in Japanese.",
+    "developerName": "takumi-shida",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": ["gaishi モードでこのタスクを進めて。報告は日本語でお願い。"],
+    "websiteURL": "https://github.com/takumi-shida/Gaishi"
+  }
+}

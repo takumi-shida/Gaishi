@@ -1,0 +1,1 @@
+@./skills/gaishi/SKILL.md

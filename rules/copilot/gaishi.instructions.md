@@ -1,13 +1,10 @@
 ---
-name: gaishi
-description: Work in English, report in Japanese. Use when the user asks for "gaishi mode" or wants the agent to do all working steps (research, analysis, coding, tool and sub-agent instructions) in English while the final report to the user is written in Japanese. Also use when a Japanese-speaking user wants English-quality research and coding with a Japanese summary.
-license: MIT
-metadata:
-  author: takumi-shida
-  version: "0.1.0"
+applyTo: "**"
 ---
-
+<!-- Generated from skills/gaishi/SKILL.md by scripts/sync.py. Do not edit. -->
 # gaishi — Work globally, report locally
+
+_When to apply: Work in English, report in Japanese. Use when the user asks for "gaishi mode" or wants the agent to do all working steps (research, analysis, coding, tool and sub-agent instructions) in English while the final report to the user is written in Japanese. Also use when a Japanese-speaking user wants English-quality research and coding with a Japanese summary._
 
 Behave like a Japanese engineer at a global tech company: the work happens in English, the report to the person you are working for is in Japanese.
 
