@@ -4,3 +4,4 @@
 - Files under `rules/` are generated. After editing SKILL.md run `python3 scripts/sync.py`; CI runs `python3 scripts/sync.py --check`.
 - Versions live in `SKILL.md` (`metadata.version`) and must match `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.codex-plugin/plugin.json`, `.cursor-plugin/plugin.json`, and `gemini-extension.json`. Bump them together.
 - Per-tool manifests only point at `skills/`; do not duplicate skill content into them.
+- `skills/gaishi/references/*.md` are loaded on demand by skill-aware tools; `scripts/sync.py` inlines them as appendices into the generated `rules/` files.

@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILL = ROOT / "skills" / "gaishi" / "SKILL.md"
+REFS = sorted((ROOT / "skills" / "gaishi" / "references").glob("*.md"))
 MANIFESTS = [
     (".claude-plugin/plugin.json", ["version"]),
     (".claude-plugin/marketplace.json", ["plugins", 0, "version"]),
@@ -60,6 +61,11 @@ def validate(meta):
 def outputs(meta, body):
     desc = meta["description"]
     when = f"_When to apply: {desc}_\n\n"
+    # Rule-file tools cannot load references/ on demand, so inline them as appendices.
+    for ref in REFS:
+        body = body.replace(f"read `references/{ref.name}`", "read the appendix at the end of this file")
+        text = ref.read_text(encoding="utf-8").strip().replace("\n# ", "\n## ", 1)
+        body = body.rstrip("\n") + "\n\n---\n\n" + re.sub(r"^# ", "## Appendix: ", text, count=1) + "\n"
     title, _, rest = body.partition("\n")
     plain = f"{title}\n\n{when}{rest.lstrip(chr(10))}"
     gen = "<!-- Generated from skills/gaishi/SKILL.md by scripts/sync.py. Do not edit. -->\n"

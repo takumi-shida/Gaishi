@@ -4,7 +4,7 @@ description: Work in English, report in Japanese. Use when the user asks for "ga
 license: MIT
 metadata:
   author: takumi-shida
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # gaishi — Work globally, report locally
@@ -43,6 +43,14 @@ Do not translate material whose meaning depends on the Japanese original. Work o
 - Text the task is about: Japanese strings under test, UI copy, user data, documents to summarize or proofread, legal, business, or cultural content specific to Japan
 - Search queries aimed at Japanese-language sources (Japanese sites, laws, local services). Search in Japanese there; use English for everything else.
 - Ambiguous or domain-specific Japanese terms in the user's request: keep the original in parentheses the first time you note it in English (e.g. `settlement (精算)`), so nothing is lost in translation.
+
+## Deliverables
+
+Work product that ships to end users is not "working text". Write it in the audience language (normally Japanese when the user's request is in Japanese), directly and from the start. Never draft it in English and translate afterwards.
+
+- Examples: UI copy, HTML page text, slide text, documents, alt text, user-facing error messages.
+- Code, identifiers, class names, file names, and code comments stay in English.
+- For HTML, slides, or any visual output containing Japanese, read `references/japanese-layout.md` and check the result by rendering it, not just by reading the code.
 
 ## Overrides
 

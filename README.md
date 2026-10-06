@@ -27,7 +27,7 @@ Manifest paths and install commands follow the conventions of popular multi-tool
 
 ## Why it works (and when it doesn't)
 
-Working in English saves tokens and is generally at least as accurate for current models, but the effect depends on the task, and Japanese-native material should not be translated. Papers, measurements, limits, and what is still unverified are in [`docs/evidence.md`](docs/evidence.md) (Japanese).
+Working in English saves tokens on the agent's own notes and instructions. For coding, evidence of an accuracy gain is weak; the gain is clearer for language-heavy steps such as research. Anything shipped to end users (UI copy, page text, slide text) is written in Japanese directly, never drafted in English and translated. Papers, measurements, limits, and what is still unverified are in [`docs/evidence.md`](docs/evidence.md) (Japanese).
 
 ## Usage
 
@@ -37,6 +37,7 @@ Ask in Japanese and mention it, e.g. 「gaishi モードでこのバグを調査
 
 ```
 skills/gaishi/SKILL.md      source of truth (Agent Skills format)
+skills/gaishi/references/  on-demand checklist for Japanese text in HTML/slides
 .claude-plugin/             Claude Code plugin + marketplace
 .codex-plugin/              Codex plugin
 .agents/plugins/            Codex marketplace
