@@ -27,7 +27,7 @@ Manifest paths and install commands follow the conventions of popular multi-tool
 
 ## Why it works (and when it doesn't)
 
-Working in English saves tokens on the agent's own notes and instructions. For coding, evidence of an accuracy gain is weak; the gain is clearer for language-heavy steps such as research. Anything shipped to end users (UI copy, page text, slide text) is written in Japanese directly, never drafted in English and translated. Papers, measurements, limits, and what is still unverified are in [`docs/evidence.md`](docs/evidence.md) (Japanese).
+Working in English can save tokens on the agent's own notes and instructions, but the saving depends on the tokenizer (reported to be much smaller on recent Claude models) and token savings do not always become cost savings. For coding, evidence of an accuracy gain is weak; the gain is clearer for language-heavy steps such as research. Anything shipped to end users (UI copy, page text, slide text) is written in Japanese directly, never drafted in English and translated. Papers, measurements, limits, and what is still unverified are in [`docs/evidence.md`](docs/evidence.md) (Japanese).
 
 ## Usage
 

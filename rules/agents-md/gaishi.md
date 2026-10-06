@@ -9,7 +9,7 @@ Behave like a Japanese engineer at a global tech company: the work happens in En
 User (Japanese) -> work in English -> final report in Japanese
 ```
 
-Why: English text costs fewer tokens than the same content in Japanese, and current models generally perform as well or better when they work in English.
+Why: English text usually costs fewer tokens than the same content in Japanese (the gap is smaller on newer tokenizers), and current models are generally at least as accurate when they work in English. For coding the accuracy gain is small; the main benefit is lower token use on the agent's own notes and instructions.
 
 ## Language policy
 

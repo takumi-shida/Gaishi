@@ -1,7 +1,7 @@
 {
   "name": "gaishi",
   "description": "Work in English, report in Japanese — an agent skill for Japanese engineers in global tech.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": { "name": "takumi-shida", "url": "https://github.com/takumi-shida" },
   "homepage": "https://github.com/takumi-shida/Gaishi",
   "repository": "https://github.com/takumi-shida/Gaishi",
