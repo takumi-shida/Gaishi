@@ -25,6 +25,10 @@ Tools with native skill support install to your user directory by default; add `
 
 Manifest paths and install commands follow the conventions of popular multi-tool skill repos such as [obra/superpowers](https://github.com/obra/superpowers) and [anthropics/skills](https://github.com/anthropics/skills). Codex/Cursor/Gemini/Copilot behavior was not tested against the real tools; please report anything that doesn't load.
 
+## Why it works (and when it doesn't)
+
+Working in English saves tokens and is generally at least as accurate for current models, but the effect depends on the task, and Japanese-native material should not be translated. Papers, measurements, limits, and what is still unverified are in [`docs/evidence.md`](docs/evidence.md) (Japanese).
+
 ## Usage
 
 Ask in Japanese and mention it, e.g. 「gaishi モードでこのバグを調査して」. Tools that load skills on demand activate it from the description; rule-file tools apply it when the model decides it is relevant.
